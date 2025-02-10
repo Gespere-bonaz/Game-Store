@@ -32,6 +32,7 @@ migrate_working_dir/
 .pub-cache/
 .pub/
 /build/
+/git_auto_update.py
 
 # Symbolication related
 app.*.symbols
