@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gamestore/pages/home/widgets/header.dart';
+import 'package:gamestore/pages/home/widgets/search.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -37,7 +39,12 @@ class _HomePageState extends State<HomePage> {
                 ),
               ),
             ),
-            Container(),
+            Column(
+              children: [
+                HeaderSection(),
+                SearchSection(),
+              ],
+            ),
           ],
         ),
       ),
