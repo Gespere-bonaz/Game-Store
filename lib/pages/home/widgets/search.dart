@@ -11,21 +11,25 @@ class SearchSection extends StatelessWidget {
         children: [
           TextField(
             decoration: InputDecoration(
-              fillColor: Colors.white,
-              filled: true,
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(20),
-                borderSide: const BorderSide(
-                  width: 0,
-                  style: BorderStyle.none,
+                fillColor: Colors.white,
+                filled: true,
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide: const BorderSide(
+                    width: 0,
+                    style: BorderStyle.none,
+                  ),
                 ),
-              ),
-              prefixIcon: const Icon(
-                Icons.search_outlined,
-                size: 30,
-              ),
-              hintText: 'Search game',
-            ),
+                prefixIcon: const Icon(
+                  Icons.search_outlined,
+                  size: 30,
+                ),
+                hintText: 'Search game',
+                hintStyle: TextStyle(
+                  fontSize: 14,
+                  // ignore: deprecated_member_use
+                  color: Colors.grey.withOpacity(0.7),
+                )),
           ),
           Positioned(
             right: 12,
