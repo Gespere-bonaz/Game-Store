@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gamestore/pages/home/widgets/category.dart';
 import 'package:gamestore/pages/home/widgets/header.dart';
 import 'package:gamestore/pages/home/widgets/search.dart';
 
@@ -43,6 +44,7 @@ class _HomePageState extends State<HomePage> {
               children: [
                 HeaderSection(),
                 SearchSection(),
+                CategorySection(),
               ],
             ),
           ],
